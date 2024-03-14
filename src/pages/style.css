@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/futuristic-background-with-lines_23-2148487905.jpg?w=1380&t=st=1710227882~exp=1710228482~hmac=4774ff670e1bbb7946d850a8d594f44c6e6b732505a1ef8d56009f5e0de4b8e2")
+    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.formContainer{
+ /* background-color: rgb(42,54,63); */
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ 
+}
+
+.formwrapper{
+    background-color: white;
+    padding: 170px 60px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+
+    .logo{
+        color: #5d5b8d;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .title{
+        color: #5d5b8d;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    >form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        >input{
+            padding: 15px;
+            border: none;
+            border-bottom:1px solid #221f85;
+            
+        }
+
+        >button{
+            background-color: rgb(110,217,160);
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 23px;
+            border: transparent;
+            width: 180px;
+            align-self: center;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+        label{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #556cb9;
+        font-size: 20px;
+        cursor: pointer;
+        }
+    }
+    p{
+        color: #221f85;
+        margin-top: 30px;
+    }
+}
